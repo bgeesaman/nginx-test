@@ -1,0 +1,2 @@
+export POD_IP=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "badchart.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].spec.podIP}")
+echo "curl -XPOST http://${POD_IP}:8080/cmd='ls -al'"
