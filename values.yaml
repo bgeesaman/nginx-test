@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: bgeesaman/nginx-test
+  repository: bradgeesaman/nginx-test
   tag: latest
   pullPolicy: IfNotPresent
 

@@ -1,4 +1,4 @@
-IMAGE=bgeesaman/nginx-test:latest
+IMAGE=bradgeesaman/nginx-test:latest
 
 
 build:
